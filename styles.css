@@ -62,7 +62,23 @@ body {
 
 .hero-buttons a:hover {
     cursor: pointer;
-    background-color: grey;
+    color: white;
+}
+
+.hero-buttons a:hover:nth-child(1) {
+    background-color: #E76F51;
+}
+
+.hero-buttons a:hover:nth-child(2) {
+    background-color: #F4A261;
+}
+
+.hero-buttons a:hover:nth-child(3) {
+    background-color: #E9C46A;
+}
+
+.hero-buttons a:hover:nth-child(4) {
+    background-color: #2A9D8F;
 }
 
 main > div {
