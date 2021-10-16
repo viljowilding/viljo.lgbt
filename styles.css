@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(hero.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+.hero-content h1 {
+    font-family: "Yeseva One", serif;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-buttons a {
+    background-color: white;
+    color: black;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.5s;
+}
+
+.hero-buttons a:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+main > div {
+    padding: 15px;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+main > div > :last-child {
+    margin-bottom: 0;
+}
+
+#about-me {
+    background-color: #E76F51;
+}
+
+#manifesto {
+    background-color: #F4A261;
+}
+
+#vote-now {
+    background-color: #E9C46A;
+}
+
+#share {
+    background-color: #2A9D8F;
+}
+
+footer {
+    padding: 15px;
+    background-color: #264653;
+}
+
+footer a {
+    color: white;
+}
