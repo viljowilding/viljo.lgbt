@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: white;
 }
@@ -97,12 +97,26 @@ main > div > :last-child {
     background-color: #E76F51;
 }
 
-#manifesto {
+#quote {
     background-color: #F4A261;
+    padding: 10vh 5vw 10vh 5vw;
+}
+
+.blockquote {
+    margin: 0;
+}
+
+#my-experience {
+    background-color: #E9C46A;
+}
+
+#manifesto {
+    background-color: #2A9D8F;
 }
 
 #vote-now {
-    background-color: #E9C46A;
+    background-color: #264653; /* can we swap this for an image? */
+    padding: 10vh 5vw 10vh 5vw; /* can and probably should tweak this sizing */
 }
 
 #share {
@@ -114,6 +128,6 @@ footer {
     background-color: #264653;
 }
 
-footer a {
-    color: white;
+.footer-text {
+    margin-bottom: 0;
 }
