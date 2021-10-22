@@ -25,10 +25,10 @@ storeScroll();
 const storeFooterVisible = () => {
   const footerRect = footer.getBoundingClientRect();
   const visible = ( !!footerRect
-    && footerRect.bottom >= 0
-    && footerRect.right >= 0
-    && footerRect.top <= html.clientHeight
-    && footerRect.left <= html.clientWidth
+    && footerRect.bottom > 0
+    && footerRect.right > 0
+    && footerRect.top < html.clientHeight
+    && footerRect.left < html.clientWidth
   );
   document.documentElement.dataset.footer = visible;
 }
