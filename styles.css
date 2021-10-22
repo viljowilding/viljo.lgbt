@@ -102,34 +102,16 @@ main > div {
     padding: 0 100px;
 }
 
-@media screen and (max-width: 1024px) {
-    main > div {
-        padding: 0 70px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    main > div {
-        padding: 0 50px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    main > div {
-        padding: 0 15px;
-    }
-}
-
 /* Adjust padding on the titles and text, not got it right yet */
 main h2 {
     font-weight: 700;
     font-size: 2rem;
-    padding: 1rem 0;
+    padding-top: 2rem;
     margin: 0;
 }
 
 main p {
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
     margin: 0;
 }
 
@@ -138,7 +120,7 @@ main blockquote {
     margin: 0;
     text-align: center;
     font-style: italic;
-    padding: 1rem 0;
+    padding: 3rem 0;
     font-size: 2rem;
 }
 
@@ -157,12 +139,21 @@ main blockquote {
 
 #manifesto {
     background-color: #2A9D8F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#manifesto h2 {
+    text-align: center;
 }
 
 .manifesto-inner {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 2rem;
+    padding: auto 0;
 }
 
 #vote-now {
@@ -214,4 +205,28 @@ footer li {
 
 .footer-text {
     margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    main > div {
+        padding: 0 70px;
+    }
+
+    .manifesto-inner {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main > div {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main > div {
+        padding: 0 15px;
+    }
 }
