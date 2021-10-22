@@ -164,12 +164,31 @@ main blockquote {
 }
 
 #vote-now {
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+
+#vote-now::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("voting.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+#vote-now * {
+    z-index: 3;
 }
 
 a.vote-button {
@@ -221,12 +240,11 @@ footer li {
     font-size: 3rem;
     color: white;
     text-decoration: none;
-    transition: color 0.5s;
 }
 
 html[data-scroll='0'] .nav-up,
 html[data-footer='true'] .nav-up {
-    color: rgba(0, 0, 0, 0);
+    display: none;
 }
 
 /* Fixes some extra content in the surrounding a tag */
