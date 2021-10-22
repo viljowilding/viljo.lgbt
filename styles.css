@@ -50,7 +50,7 @@ body * {
 }
 
 .hero-content h1 {
-    font-family: "Yeseva One", serif;
+    font-family: "Fredoka One", serif;
     font-size: 3rem;
     margin-bottom: 0;
 }
@@ -91,23 +91,27 @@ body * {
     background-color: #e1bb5f;
 }
 
-.hero-buttons a:hover:nth-child(4) {
-    background-color: #2A9D8F;
-}
-
 /* BODY */
 
-main > div {
+main > div,
+#about > div {
     display: inline-block;
     padding: 0 100px;
 }
 
-/* Adjust padding on the titles and text, not got it right yet */
+#about {
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 main h2 {
-    font-weight: 700;
     font-size: 2rem;
     padding-top: 2rem;
     margin: 0;
+    font-family: "Fredoka One", serif;
 }
 
 main p {
@@ -115,7 +119,6 @@ main p {
     margin: 0;
 }
 
-/* add some extra stuff above + below maybe? */
 main blockquote {
     margin: 0;
     text-align: center;
@@ -126,15 +129,19 @@ main blockquote {
 
 #about-me {
     background-color: #E76F51;
+    flex-grow: 0;
 }
 
 #quote {
     background-color: #F4A261;
-    width: 100%;
+    flex-grow: 1;
+    display: flex !important;
+    align-items: center;
 }
 
 #experience {
     background-color: #e1bb5f;
+    flex-grow: 0;
 }
 
 #manifesto {
@@ -163,10 +170,6 @@ main blockquote {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.vote-content {
-
 }
 
 a.vote-button {
@@ -207,10 +210,29 @@ footer li {
     margin-bottom: 0;
 }
 
+/* NAV UP */
+
+.nav-up {
+    position: fixed;
+    margin: 15px;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+html:not([data-scroll='0']) .nav-up {
+    color: white;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1024px) {
-    main > div {
+    main > div,
+    #about > div {
         padding: 0 70px;
     }
 
@@ -220,13 +242,15 @@ footer li {
 }
 
 @media screen and (max-width: 768px) {
-    main > div {
+    main > div,
+    #about > div {
         padding: 0 50px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    main > div {
+    main > div,
+    #about > div {
         padding: 0 15px;
     }
 }
