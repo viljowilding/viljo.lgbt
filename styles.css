@@ -219,13 +219,19 @@ footer li {
     bottom: 0;
     z-index: 5;
     font-size: 3rem;
-    color: rgba(0, 0, 0, 0);
+    color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-html:not([data-scroll='0']) .nav-up {
-    color: white;
+html[data-scroll='0'] .nav-up,
+html[data-footer='true'] .nav-up {
+    color: rgba(0, 0, 0, 0);
+}
+
+/* Fixes some extra content in the surrounding a tag */
+.nav-up i {
+    float: right;
 }
 
 /* RESPONSIVE */
