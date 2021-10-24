@@ -92,7 +92,7 @@ body * {
 }
 
 .hero-buttons a:hover:nth-child(4) {
-    background-color: #7768AE;
+    background-color: #2CCD13;
 }
 /* BODY */
 main > div, #about > div {
@@ -115,9 +115,14 @@ main h2 {
     font-family: "Fredoka One", serif;
 }
 
-main p {
+main p,
+main ol {
     padding: 1rem 0 2rem 0;
     margin: 0;
+}
+
+main ol {
+    list-style-position: inside;
 }
 
 main blockquote {
@@ -147,20 +152,13 @@ main blockquote {
 
 #manifesto {
     background-color: #2CCD13;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #manifesto-nus {
     background-color: #53B3CB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #vote-now {
-    /* background-color: #ff004f; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -306,6 +304,7 @@ span {
 
 .footer-links a {
     color: white;
+    transition: color 0.5s;
 }
 
 .footer-links a:hover {
