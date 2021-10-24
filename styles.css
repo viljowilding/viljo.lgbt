@@ -80,21 +80,22 @@ body * {
 }
 
 .hero-buttons a:hover:nth-child(1) {
-    background-color: #E76F51;
+    background-color: #DA2F46;
 }
 
 .hero-buttons a:hover:nth-child(2) {
-    background-color: #F4A261;
+    background-color: #ED8345;
 }
 
 .hero-buttons a:hover:nth-child(3) {
-    background-color: #e1bb5f;
+    background-color: #FFC20A;
 }
 
+.hero-buttons a:hover:nth-child(4) {
+    background-color: #7768AE;
+}
 /* BODY */
-
-main > div,
-#about > div {
+main > div, #about > div {
     display: inline-block;
     padding: 0 100px;
 }
@@ -128,39 +129,34 @@ main blockquote {
 }
 
 #about-me {
-    background-color: #E76F51;
+    background-color: #DA2F46;
     flex-grow: 0;
 }
 
 #quote {
-    background-color: #F4A261;
+    background-color: #ED8345;
     flex-grow: 1;
     display: flex !important;
     align-items: center;
 }
 
 #experience {
-    background-color: #e1bb5f;
+    background-color: #FFC20A;
     flex-grow: 0;
 }
 
 #manifesto {
-    background-color: #2A9D8F;
-    min-height: 100vh;
+    background-color: #2CCD13;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#manifesto h2 {
-    text-align: center;
-}
-
-.manifesto-inner {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 2rem;
-    padding: auto 0;
+#manifesto-nus {
+    background-color: #53B3CB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #vote-now {
@@ -209,7 +205,7 @@ a.vote-button:hover {
 
 footer {
     padding: 15px;
-    background-color: #264653;
+    background-color: #7768AE;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -277,4 +273,57 @@ html[data-footer='true'] .nav-up {
     #about > div {
         padding: 0 15px;
     }
+}
+
+#timer, #timer > div {
+    display: inline-block;
+    line-height: 1;
+    padding: 0 20px 0 20px;
+    font-size: 40px;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+#days {
+    color: #DA2F46;
+}
+
+#hours {
+    color: #ED8345;
+}
+
+#minutes {
+    color: #FFC20A;
+}
+
+#seconds {
+    color: #2CCD13;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links a:hover {
+    cursor: pointer;
+}
+
+.footer-link-one:hover {
+    color: #DA2F46;
+}
+
+.footer-link-two:hover {
+    color: #ED8345;
+}
+
+.footer-link-three:hover {
+    color: #FFC20A;
+}
+
+.footer-link-four:hover {
+    color: #2CCD13;
 }
